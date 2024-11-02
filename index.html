@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form PHP</title>
+</head>
+
+<body>
+
+    <form action="save.php" method="post">
+        <table border="0" style="width:400px;">
+            <tr>
+                <td>
+                    <label for="nim">NIM: </label>
+                </td>
+                <td>
+                    <input type="text" inputmode="numeric" name="nim" id="nim" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nama">Nama: </label>
+                </td>
+                <td>
+                    <input type="text" name="nama" id="nama" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Jenis Kelamin</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="Laki-Laki" required>
+                    <label for="male">Laki-Laki</label>
+
+                    <input type="radio" name="gender" id="female" value="Perempuan">
+                    <label for="female">Perempuan</label>
+
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="alamat">Alamat: </label>
+                </td>
+                <td>
+                    <textarea name="alamat" id="alamat" cols="25" rows="3" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telp">No. HP: </label>
+                </td>
+                <td>
+                    <input type="tel" name="telp" id="telp" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p></p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit"></td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="data.csv">Download CSV.</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
